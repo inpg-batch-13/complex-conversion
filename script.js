@@ -1,5 +1,17 @@
 function complexConversion (text) {
   // Your code here
+  var data = text.split(',')
+
+  var result = {}
+
+  for( var i = 0; i < data.length; i++){
+    var item = data[i].split(';')
+    // console.log(item)
+    var key = item [0]
+    var value = item [1]
+    result [key] = value
+  }
+return result
 }
 
 // TEST CASES
