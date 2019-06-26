@@ -1,5 +1,15 @@
 function complexConversion (text) {
-  // Your code here
+  var split = text.split(',').map(function(n){
+   return n.split(':')
+  })
+
+ var hasil = {}
+  for (i = 0 ; i < split.length ; i++){
+    
+   hasil[split[i][0]] = split[i][1]  
+
+  } 
+  return hasil
 }
 
 // TEST CASES
